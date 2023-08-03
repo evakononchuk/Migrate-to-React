@@ -1,3 +1,27 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
+import Search from "./Search";
+import City from "./City";
+import Temperature from "./Temperature";
+
+import "./App.css";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+    <div className="App">
+      <Search />
+      <City />
+      <Temperature />
+    </div>
+  </StrictMode>
+)
+
+
+
 //Set day time
 let days = [
   "Sunday",
